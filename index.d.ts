@@ -5,6 +5,7 @@ export type Size = string | number;
 export type Split = 'vertical' | 'horizontal';
 
 export type SplitPaneProps = {
+  children: any;
   allowResize?: boolean;
   className?: string;
   primary?: 'first' | 'second';
@@ -59,6 +60,7 @@ declare class SplitPane extends React.Component<
 export default SplitPane;
 
 export type PaneProps = {
+  children: any;
   className?: string;
   size?: Size;
   split?: Split;
